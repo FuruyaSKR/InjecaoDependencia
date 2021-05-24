@@ -12,7 +12,7 @@ public class main {
 
 	public static void main(String[] args) {
 		
-		Aluno a = new AlunoXML(); // mudar a persistencia
+		Aluno a = new AlunoJSON(); // mudar a persistencia
 		
 		a.setNome("Igor Raimundo de Paula");
 		a.setMatricula("R0UzFhHimN");
@@ -24,7 +24,7 @@ public class main {
 		a.setDataNascimento(c);
 		
 		Persistencia p = new Persistencia(a);
-		System.out.println(a.gravar(a, "testeXml"));
+		System.out.println(a.gravar(a, "testejson"));
 	}
 
 }
