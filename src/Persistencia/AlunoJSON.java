@@ -1,6 +1,6 @@
 package Persistencia;
 
-import Base.Aluno;
+import Principal.Aluno;
 
 public class AlunoJSON extends Aluno {
 

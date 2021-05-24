@@ -1,15 +1,18 @@
-package Base;
+package Principal;
 
 import java.util.Calendar;
 
 import Persistencia.AlunoCSV;
+import Persistencia.AlunoXML;
+import Persistencia.AlunoJSON;
 import Persistencia.Persistencia;
+import Principal.Aluno;
 
 public class main {
 
 	public static void main(String[] args) {
 		
-		Aluno a = new AlunoCSV(); // mudar a persistencia
+		Aluno a = new AlunoXML(); // mudar a persistencia
 		
 		a.setNome("Igor Raimundo de Paula");
 		a.setMatricula("R0UzFhHimN");
@@ -21,7 +24,7 @@ public class main {
 		a.setDataNascimento(c);
 		
 		Persistencia p = new Persistencia(a);
-		System.out.println(a.gravar(a, "teste"));
+		System.out.println(a.gravar(a, "testeXml"));
 	}
 
 }

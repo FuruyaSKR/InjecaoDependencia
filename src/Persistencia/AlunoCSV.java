@@ -1,9 +1,10 @@
 package Persistencia;
 
-import Base.Aluno;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+
+import Principal.Aluno;
 
 public class AlunoCSV extends Aluno {
 
