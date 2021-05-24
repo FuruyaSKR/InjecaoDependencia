@@ -18,7 +18,7 @@ public class AlunoCSV extends Aluno {
 						, a.getCpf()
 						, a.getEmail()
 						, a.getMatricula()
-						, a.getDataNascimento());
+						, a.formatDate());
 			arq.close();
 			return "CSV Gravado com Sucesso";
 		} catch (IOException e) {

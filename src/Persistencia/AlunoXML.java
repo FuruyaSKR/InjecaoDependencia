@@ -42,7 +42,7 @@ public class AlunoXML extends Aluno {
 		dados.addContent(matri);
 		
 		Element datanasc = new Element("DataNascimento");
-		datanasc.setText(a.getDataNascimento());
+		datanasc.setText(a.formatDate());
 		dados.addContent(datanasc);
 		
 		config.addContent(dados);

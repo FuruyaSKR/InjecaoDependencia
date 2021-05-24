@@ -39,10 +39,8 @@ import java.util.Calendar;
 			}
 		}
 
-		public String getDataNascimento() {
-			String format = (dataNascimento.get(Calendar.DAY_OF_MONTH) + "/" + (dataNascimento.get(Calendar.MONTH) + 1)
-					+ "/" + (dataNascimento.get(Calendar.YEAR)));
-			return format;
+		public Calendar getDataNascimento() {
+			return dataNascimento;
 		}
 
 		public void setDataNascimento(Calendar dataNascimento) {
@@ -51,6 +49,11 @@ import java.util.Calendar;
 			}
 		}
 
+		public String formatDate() {
+			String format = (dataNascimento.get(Calendar.DAY_OF_MONTH) + "/" + (dataNascimento.get(Calendar.MONTH) + 1)
+					+ "/" + (dataNascimento.get(Calendar.YEAR)));
+			return format;
+		}
 		public String gravar(Aluno a,String filename) {
 			return "Teste normal Enviado com Sucesso";
 		}
